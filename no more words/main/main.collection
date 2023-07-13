@@ -5,7 +5,7 @@ instances {
   position {
     x: 640.0
     y: 384.0
-    z: 0.1
+    z: 0.9
   }
   rotation {
     x: 0.0
@@ -59,9 +59,28 @@ embedded_instances {
   "  }\n"
   "}\n"
   "embedded_components {\n"
-  "  id: \"factory-0-1\"\n"
+  "  id: \"factory-1-0\"\n"
   "  type: \"collectionfactory\"\n"
-  "  data: \"prototype: \\\"/main/screens/0-1.collection\\\"\\n"
+  "  data: \"prototype: \\\"/main/screens/1-0.collection\\\"\\n"
+  "load_dynamically: false\\n"
+  "dynamic_prototype: false\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"factory-1-1\"\n"
+  "  type: \"collectionfactory\"\n"
+  "  data: \"prototype: \\\"/main/screens/1-1.collection\\\"\\n"
   "load_dynamically: false\\n"
   "dynamic_prototype: false\\n"
   "\"\n"

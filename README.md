@@ -2,4 +2,6 @@
 
 Project game for Gamedev course
 
-todo...
+thanks:
+- MonkeyImage
+- 

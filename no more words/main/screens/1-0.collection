@@ -25,7 +25,7 @@ embedded_instances {
   id: "map"
   data: "components {\n"
   "  id: \"tiles\"\n"
-  "  component: \"/main/map/alexs-bedroom.tilemap\"\n"
+  "  component: \"/main/map/hall-second.tilemap\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"

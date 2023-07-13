@@ -1,4 +1,4 @@
-local scroll_speed = 0
+local scroll_speed = 0.5
 
 function init(self)
 	-- use the x and y component to track which screen is currently displayed.
@@ -12,10 +12,10 @@ end
 
 -- start positions of loaded screens.
 local positions = { [hash("center")] = vmath.vector3(),
-					[hash("up")] = vmath.vector3(0, 720, 0),
-					[hash("down")] = vmath.vector3(0, -720, 0),
-					[hash("right")] = vmath.vector3(1280, 0, 0),
-					[hash("left")] = vmath.vector3(-1280, 0, 0) }
+					[hash("up")] = vmath.vector3(0, 864, 0),
+					[hash("down")] = vmath.vector3(0, -864, 0),
+					[hash("right")] = vmath.vector3(1152, 0, 0),
+					[hash("left")] = vmath.vector3(-1152, 0, 0) }
 
 local function done(self)
 	-- done animating
@@ -27,7 +27,7 @@ local function done(self)
 	end
 	-- the spawed next screen is in place and is now the new current screen
 	self.current_screen = self.next_screen
-	
+
 	-- tell hero to enter screen
 	msg.post("/hero#script", "enter_screen", { dir = self.dir })
 end
@@ -36,7 +36,7 @@ function on_message(self, message_id, message, sender)
 	if message_id == hash("load_screen") and not self.loading then
 		self.loading = true
 		self.dir = message.dir
-		
+
 		if message.dir == hash("up") then
 			self.screen_pos.y = self.screen_pos.y + 1
 		elseif message.dir == hash("down") then

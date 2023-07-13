@@ -18,6 +18,18 @@ key_trigger {
   input: KEY_SPACE
   action: "action"
 }
+key_trigger {
+  input: KEY_1
+  action: "one"
+}
+key_trigger {
+  input: KEY_2
+  action: "two"
+}
+key_trigger {
+  input: KEY_3
+  action: "three"
+}
 mouse_trigger {
   input: MOUSE_BUTTON_LEFT
   action: "touch"
