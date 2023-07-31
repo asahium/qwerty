@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/night0.rpy", line 57, in script
+    show boy1 normal at left with dissolve
+Exception: Image 'boy1' does not accept attributes 'normal'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/night0.rpy", line 57, in script
+    show boy1 normal at left with dissolve
+  File "/home/wyrm/renpy-8.1.1-sdk/renpy/ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "/home/wyrm/renpy-8.1.1-sdk/renpy/ast.py", line 1391, in show_imspec
+    renpy.config.show(name,
+  File "/home/wyrm/renpy-8.1.1-sdk/renpy/exports.py", line 733, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "/home/wyrm/renpy-8.1.1-sdk/renpy/display/image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "/home/wyrm/renpy-8.1.1-sdk/renpy/display/core.py", line 496, in _duplicate
+    args.extraneous()
+  File "/home/wyrm/renpy-8.1.1-sdk/renpy/display/core.py", line 359, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'boy1' does not accept attributes 'normal'.
+
+Linux-6.4.4-200.fc38.x86_64-x86_64-with-glibc2.37 x86_64
+Ren'Py 8.1.1.23060707
+I am ill and you are my symptom 1.0
+Sat Jul 29 23:58:58 2023

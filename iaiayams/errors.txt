@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/night0.rpy", line 23: expected end of line
+    stop music "bestmusicever.mp3"
+               ^
+
+File "game/night0.rpy", line 94: expected end of line
+    stop music "school.mp3"
+               ^
+
+Ren'Py Version: Ren'Py 8.1.1.23060707
+Sun Jul 30 00:19:35 2023
